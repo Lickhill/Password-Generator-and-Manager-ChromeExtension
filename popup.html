@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Password Generator and Manager</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<h1>Password Generator and Manager</h1>
+			<input
+				type="text"
+				id="websiteName"
+				placeholder="Website Name"
+				required
+			/>
+			<input type="email" id="email" placeholder="Email" required />
+			<button id="generateBtn">Generate Password</button>
+			<textarea id="passwordOutput" readonly></textarea>
+			<p id="message"></p>
+		</div>
+		<script src="popup.js"></script>
+	</body>
+</html>

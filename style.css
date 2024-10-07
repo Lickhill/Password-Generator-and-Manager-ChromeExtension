@@ -1,0 +1,121 @@
+body {
+	font-family: "Roboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	width: 380px;
+	padding: 25px;
+	background-color: #f0f4f8;
+	color: #333;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	gap: 18px;
+	background-color: #ffffff;
+	padding: 25px;
+	border-radius: 12px;
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+	box-sizing: border-box;
+}
+
+h1 {
+	font-size: 26px;
+	text-align: center;
+	color: #2c3e50;
+	margin-bottom: 25px;
+	font-weight: 600;
+}
+
+input,
+textarea,
+button {
+	width: 100%;
+	box-sizing: border-box;
+}
+
+input,
+textarea {
+	padding: 12px 15px;
+	border: 2px solid #e0e0e0;
+	border-radius: 6px;
+	font-size: 15px;
+	transition: all 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+	outline: none;
+	border-color: #3498db;
+	box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+textarea {
+	height: 90px;
+	resize: none;
+}
+
+button {
+	padding: 14px;
+	background-color: #3498db;
+	color: white;
+	border: none;
+	border-radius: 6px;
+	font-size: 16px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	box-shadow: 0 4px 6px rgba(52, 152, 219, 0.2);
+}
+
+button:hover {
+	background-color: #2980b9;
+	transform: translateY(-2px);
+	box-shadow: 0 6px 8px rgba(52, 152, 219, 0.3);
+}
+
+button:active {
+	transform: translateY(0);
+	box-shadow: 0 2px 4px rgba(52, 152, 219, 0.2);
+}
+
+#message {
+	font-size: 15px;
+	color: #27ae60;
+	text-align: center;
+	margin-top: 12px;
+	font-weight: 600;
+}
+
+/* Add some icons to inputs */
+input[type="text"],
+input[type="email"] {
+	background-repeat: no-repeat;
+	background-position: 15px center;
+	background-size: 20px;
+	padding-left: 45px;
+}
+
+input[type="text"] {
+	background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill="%23bdc3c7" d="M10 0C4.5 0 0 4.5 0 10s4.5 10 10 10 10-4.5 10-10S15.5 0 10 0zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8zm.5-13H9v5l4.2 2.5.8-1.3-3.5-2.1V5z"/></svg>');
+}
+
+input[type="email"] {
+	background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill="%23bdc3c7" d="M18 2H2C.9 2 0 2.9 0 4v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14h-2V8l-5 4-5-4v8H2V4h16v12z"/></svg>');
+}
+
+/* Add a subtle animation to the container */
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(10px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.container {
+	animation: fadeIn 0.5s ease-out;
+}

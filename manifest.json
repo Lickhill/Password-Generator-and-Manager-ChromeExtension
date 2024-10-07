@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "Password Generator and Manager",
+    "version": "1.0",
+    "description": "Generate and manage strong passwords for websites",
+    "permissions": ["storage", "clipboardWrite", "downloads"],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "icon.png"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "icons": {
+      "48": "icon.png"
+    }
+  }
