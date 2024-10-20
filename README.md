@@ -1,8 +1,8 @@
-# LinkedIn Learning Chapter Quiz Skipper
+# Password Generator and Manager Chrome Extension
 
 ## Project Aim
 
-This browser extension is designed to skip all the questions of the Chapter Quiz of your LinkedIn Learning Course **automatically**.
+This browser extension is designed to store all the password in your local system.
 
 1. **Input**: 
    - Allows you to enter the name of a website
